@@ -105,7 +105,11 @@ Component({
       if (this.data.skuState[x+'-'+y] == 2) return
 
       let item = this.data.sku.goods[x]['items'][y]
-      this.data.select[x] = item
+      if (this.data.select[x] == item) {
+        this.data.select[x] = ''
+      } else {
+        this.data.select[x] = item
+      }
 
       for (let x = 0; x < this.data.sku.goods.length; x++) {
         for (let y = 0; y < this.data.sku.goods[x]['items'].length; y++) {
