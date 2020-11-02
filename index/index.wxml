@@ -1,0 +1,1 @@
+<ui-sku sku="{{sku}}" bind:onChange="handleChange"></ui-sku>

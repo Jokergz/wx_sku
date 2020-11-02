@@ -1,0 +1,36 @@
+/* components/sku.wxss */
+.sku {
+  padding-left: 30rpx;
+}
+.sku-box{
+  margin-top: 60rpx;
+}
+.sku-title{
+  margin-bottom: 10rpx;
+  color: #666;
+}
+.sku-item-box{
+  display: flex;
+  flex-wrap: wrap;
+}
+.sku-item{
+  margin-top: 20rpx;
+  margin-right: 30rpx;
+  padding: 0 34rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #f2f2f2;
+}
+
+.item-state-0 {
+  color: #ccc;
+}
+
+.item-state-1 {
+  color: #333;
+}
+
+.item-state-2 {
+  color: white;
+  background: red;
+}

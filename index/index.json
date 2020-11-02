@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "ui-sku": "../components/sku"
+  }
+}

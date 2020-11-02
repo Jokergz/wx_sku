@@ -1,0 +1,9 @@
+<!--components/sku.wxml-->
+<view class="sku">
+	<view wx:for="{{sku.goods}}" wx:key="x" wx:for-item="title" class="sku-box" wx:for-index="x">
+		<view class="sku-title">{{title.name}}</view>
+		<view class="sku-item-box">
+			<view class="sku-item {{'item-state-'+skuState[x+'-'+y]}}" wx:for="{{title.items}}" wx:for-index="y" wx:for-item="item" wx:key="y" data-x="{{x}}" data-y="{{y}}" bindtap="handleClick">{{item}}</view>
+		</view>
+	</view>
+</view>
