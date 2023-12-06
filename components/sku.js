@@ -21,6 +21,9 @@ Component({
     watchSku(sku) {
       if (!sku) return
 
+      this.data.skuState = {}
+      this.data.select = []
+
       let goods = sku.goods
 
       if (sku.default) {
